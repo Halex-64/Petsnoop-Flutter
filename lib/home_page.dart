@@ -1,3 +1,4 @@
+import 'package:app_vendas/carrinho.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -17,10 +18,9 @@ class HomePage extends StatelessWidget {
         actions: const [
           Icon(
             Icons.shopping_cart,
-            color: Colors.white,
           )
         ],
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.purple[400],
       ),
       body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Padding(
@@ -136,23 +136,27 @@ class HomePage extends StatelessWidget {
               margin: const EdgeInsets.all(8),
               height: 100,
               width: 200,
-              child: Card(
-                color: Colors.purple[50],
-                elevation: 4,
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8),
-                      child: Image.asset(
-                        'assets/images/racao3.png',
-                        width: 110,
-                        height: 110,
+              child: GestureDetector(
+                onTap: () => Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => const Carrinho())),
+                child: Card(
+                  color: Colors.purple[50],
+                  elevation: 4,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8),
+                        child: Image.asset(
+                          'assets/images/racao3.png',
+                          width: 110,
+                          height: 110,
+                        ),
                       ),
-                    ),
-                    Text('Ração para gatos Whiskas',
-                        style: GoogleFonts.roboto(
-                            fontSize: 14, fontWeight: FontWeight.bold)),
-                  ],
+                      Text('Ração para gatos Whiskas \n RS 20,00',
+                          style: GoogleFonts.roboto(
+                              fontSize: 14, fontWeight: FontWeight.bold)),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -173,7 +177,7 @@ class HomePage extends StatelessWidget {
                         height: 110,
                       ),
                     ),
-                    Text('Ração para gatos Whiskas',
+                    Text('Ração para gatos Mandai \n RS 20,00',
                         style: GoogleFonts.roboto(
                             fontSize: 14, fontWeight: FontWeight.bold)),
                   ],
@@ -197,7 +201,7 @@ class HomePage extends StatelessWidget {
                         height: 110,
                       ),
                     ),
-                    Text('Ração para gatos Whiskas',
+                    Text('Ração para gatos Premier \n RS 20,00',
                         style: GoogleFonts.roboto(
                             fontSize: 14, fontWeight: FontWeight.bold)),
                   ],
@@ -235,7 +239,7 @@ class HomePage extends StatelessWidget {
                         height: 110,
                       ),
                     ),
-                    Text('Ratinho de Brinquedo',
+                    Text('Ratinho de Brinquedo \n RS 20,00',
                         style: GoogleFonts.roboto(
                             fontSize: 14, fontWeight: FontWeight.bold)),
                   ],
@@ -259,7 +263,7 @@ class HomePage extends StatelessWidget {
                         height: 110,
                       ),
                     ),
-                    Text('Varinha de Gato Retrátil',
+                    Text('Varinha de Gato Retrátil \n RS 20,00',
                         style: GoogleFonts.roboto(
                             fontSize: 14, fontWeight: FontWeight.bold)),
                   ],
@@ -283,7 +287,7 @@ class HomePage extends StatelessWidget {
                         height: 110,
                       ),
                     ),
-                    Text('Arranhador para Gatos',
+                    Text('Arranhador para Gatos \n RS 20,00',
                         style: GoogleFonts.roboto(
                             fontSize: 14, fontWeight: FontWeight.bold)),
                   ],
