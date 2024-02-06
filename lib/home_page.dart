@@ -14,7 +14,12 @@ class HomePage extends StatelessWidget {
               fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
         ),
         centerTitle: true,
-        actions: const [Icon(Icons.shopping_cart,color: Colors.white,)],
+        actions: const [
+          Icon(
+            Icons.shopping_cart,
+            color: Colors.white,
+          )
+        ],
         backgroundColor: Colors.deepPurple,
       ),
       body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -145,6 +150,140 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Text('Ração para gatos Whiskas',
+                        style: GoogleFonts.roboto(
+                            fontSize: 14, fontWeight: FontWeight.bold)),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.all(8),
+              height: 100,
+              width: 200,
+              child: Card(
+                color: Colors.purple[50],
+                elevation: 4,
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Image.asset(
+                        'assets/images/racao2.png',
+                        width: 110,
+                        height: 110,
+                      ),
+                    ),
+                    Text('Ração para gatos Whiskas',
+                        style: GoogleFonts.roboto(
+                            fontSize: 14, fontWeight: FontWeight.bold)),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.all(8),
+              height: 100,
+              width: 200,
+              child: Card(
+                color: Colors.purple[50],
+                elevation: 4,
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Image.asset(
+                        'assets/images/racao1.png',
+                        width: 110,
+                        height: 110,
+                      ),
+                    ),
+                    Text('Ração para gatos Whiskas',
+                        style: GoogleFonts.roboto(
+                            fontSize: 14, fontWeight: FontWeight.bold)),
+                  ],
+                ),
+              ),
+            ),
+          ]),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8),
+          child: Text('Brinquedos',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.arimo(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              )),
+        ),
+        SizedBox(
+          height: 200,
+          child: ListView(scrollDirection: Axis.horizontal, children: [
+            Container(
+              margin: const EdgeInsets.all(8),
+              height: 100,
+              width: 200,
+              child: Card(
+                color: Colors.blue[50],
+                elevation: 4,
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Image.asset(
+                        'assets/images/brinquedo1.png',
+                        width: 110,
+                        height: 110,
+                      ),
+                    ),
+                    Text('Ratinho de Brinquedo',
+                        style: GoogleFonts.roboto(
+                            fontSize: 14, fontWeight: FontWeight.bold)),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.all(8),
+              height: 100,
+              width: 200,
+              child: Card(
+                color: Colors.blue[50],
+                elevation: 4,
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Image.asset(
+                        'assets/images/brinquedo2.png',
+                        width: 110,
+                        height: 110,
+                      ),
+                    ),
+                    Text('Varinha de Gato Retrátil',
+                        style: GoogleFonts.roboto(
+                            fontSize: 14, fontWeight: FontWeight.bold)),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.all(8),
+              height: 100,
+              width: 200,
+              child: Card(
+                color: Colors.blue[50],
+                elevation: 4,
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Image.asset(
+                        'assets/images/brinquedo3.png',
+                        width: 110,
+                        height: 110,
+                      ),
+                    ),
+                    Text('Arranhador para Gatos',
                         style: GoogleFonts.roboto(
                             fontSize: 14, fontWeight: FontWeight.bold)),
                   ],
